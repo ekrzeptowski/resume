@@ -6,7 +6,20 @@ type SecondaryLocale = "";
 type Locale = PrimaryLocale | SecondaryLocale;
 type RouteParameters = { "/": undefined };
 type Route = keyof RouteParameters;
-type TranslationVariables = { your_common: object | undefined; "they.can": object | undefined };
+type TranslationVariables = {
+  "section.socialMedia": object | undefined;
+  "section.interests": object | undefined;
+  "section.certificates": object | undefined;
+  "section.languages": object | undefined;
+  "section.skills": object | undefined;
+  "section.work": object | undefined;
+  "section.education": object | undefined;
+  "section.projects": object | undefined;
+  "section.volunteer": object | undefined;
+  "section.references": object | undefined;
+  your_common: object | undefined;
+  "they.can": object | undefined;
+};
 type Translation = keyof TranslationVariables;
 type Environment = "none" | "node" | "browser";
 declare module "astro-i18n" {

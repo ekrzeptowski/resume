@@ -1,0 +1,32 @@
+---
+import { t } from "astro-i18n";
+import SectionTitle from "../SectionTitle.astro";
+import type { ResumeSchema } from "@kurone-kito/jsonresume-types";
+
+const { education } = Astro.props;
+
+interface Props {
+  education: ResumeSchema["education"];
+}
+---
+
+<section>
+  <SectionTitle>{t("section.education")}</SectionTitle>
+  {
+    education?.map((education) => {
+      return (
+        <>
+          <h4>{education.institution}</h4>
+          <p>{education.area}</p>
+          <p>{education.studyType}</p>
+          <p>{education.startDate}</p>
+          <p>{education.endDate}</p>
+          <p>{education.gpa}</p>
+          {education.courses?.map((course) => {
+            return <p>{course}</p>;
+          })}
+        </>
+      );
+    })
+  }
+</section>

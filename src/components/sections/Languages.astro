@@ -1,0 +1,25 @@
+---
+import { t } from "astro-i18n";
+import SectionTitle from "../SectionTitle.astro";
+import type { ResumeSchema } from "@kurone-kito/jsonresume-types";
+
+const { languages } = Astro.props;
+
+interface Props {
+  languages: ResumeSchema["languages"];
+}
+---
+
+<section>
+  <SectionTitle>{t("section.languages")}</SectionTitle>
+  {
+    languages?.map((language) => {
+      return (
+        <>
+          <h4>{language.language}</h4>
+          <p>{language.fluency}</p>
+        </>
+      );
+    })
+  }
+</section>

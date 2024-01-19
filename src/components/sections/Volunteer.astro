@@ -1,0 +1,35 @@
+---
+import { astroI18n, t } from "astro-i18n";
+import SectionTitle from "../SectionTitle.astro";
+import { formatDate } from "../../utils/formatDate";
+import type { ResumeSchema } from "@kurone-kito/jsonresume-types";
+
+const { volunteer } = Astro.props;
+
+interface Props {
+  volunteer: ResumeSchema["volunteer"];
+}
+---
+
+<div>
+  <SectionTitle>{t("section.volunteer")}</SectionTitle>
+  {
+    volunteer?.map((volunteer) => {
+      volunteer.startDateParsed = volunteer.startDate ? formatDate(volunteer.startDate, astroI18n.locale) : undefined;
+      volunteer.endDateParsed = volunteer.endDate ? formatDate(volunteer.endDate, astroI18n.locale) : undefined;
+      return (
+        <>
+          <h4>{volunteer.organization}</h4>
+          <p>{volunteer.position}</p>
+          <p>
+            {volunteer.startDateParsed} - {volunteer.endDateParsed}
+          </p>
+          <p>{volunteer.summary}</p>
+          {volunteer.highlights?.map((highlight) => {
+            return <p>{highlight}</p>;
+          })}
+        </>
+      );
+    })
+  }
+</div>

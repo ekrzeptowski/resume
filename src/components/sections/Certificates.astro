@@ -1,0 +1,26 @@
+---
+import type { ResumeSchema } from "@kurone-kito/jsonresume-types";
+import { t } from "astro-i18n";
+import SectionTitle from "../SectionTitle.astro";
+
+const { certificates } = Astro.props;
+
+interface Props {
+  certificates: ResumeSchema["certificates"];
+}
+---
+
+<section>
+  <SectionTitle>{t("section.certificates")}</SectionTitle>
+  {
+    certificates?.map((certificate) => {
+      return (
+        <>
+          <h4>{certificate.name}</h4>
+          <p>{certificate.issuer}</p>
+          <p>{certificate.date}</p>
+        </>
+      );
+    })
+  }
+</section>

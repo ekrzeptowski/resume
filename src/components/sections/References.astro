@@ -1,0 +1,25 @@
+---
+import { t } from "astro-i18n";
+import SectionTitle from "../SectionTitle.astro";
+import type { ResumeSchema } from "@kurone-kito/jsonresume-types";
+
+const { references } = Astro.props;
+
+interface Props {
+  references: ResumeSchema["references"];
+}
+---
+
+<section>
+  <SectionTitle>{t("section.references")}</SectionTitle>
+  {
+    references?.map((reference) => {
+      return (
+        <>
+          <h4>{reference.name}</h4>
+          <p>{reference.reference}</p>
+        </>
+      );
+    })
+  }
+</section>

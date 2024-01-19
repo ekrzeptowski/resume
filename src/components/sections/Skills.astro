@@ -1,0 +1,26 @@
+---
+import { t } from "astro-i18n";
+import SectionTitle from "../SectionTitle.astro";
+import type { ResumeSchema } from "@kurone-kito/jsonresume-types";
+
+const { skills } = Astro.props;
+
+interface Props {
+  skills: ResumeSchema["skills"];
+}
+---
+
+<section>
+  <SectionTitle>{t("section.skills")}</SectionTitle>
+  {
+    skills?.map((skill) => {
+      return (
+        <>
+          <h4>{skill.name}</h4>
+          <p>{skill.level}</p>
+          <p>{skill.keywords?.join(", ")}</p>
+        </>
+      );
+    })
+  }
+</section>

@@ -1,0 +1,24 @@
+---
+import { t } from "astro-i18n";
+import SectionTitle from "../SectionTitle.astro";
+import type { ResumeSchema } from "@kurone-kito/jsonresume-types";
+
+const { profiles } = Astro.props;
+
+interface Props {
+  profiles: Required<ResumeSchema>["basics"]["profiles"];
+}
+---
+
+<section>
+  <SectionTitle>{t("section.socialMedia")}</SectionTitle>
+  {
+    profiles?.map((profile) => {
+      return (
+        <p>
+          {profile.network}/{profile.username}
+        </p>
+      );
+    })
+  }
+</section>
