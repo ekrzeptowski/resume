@@ -2,11 +2,38 @@
 import { t } from "astro-i18n";
 import SectionTitle from "../SectionTitle.astro";
 import type { ResumeSchema } from "@kurone-kito/jsonresume-types";
+import { Icon } from "astro-icon/components";
 
 const { profiles } = Astro.props;
 
 interface Props {
   profiles: Required<ResumeSchema>["basics"]["profiles"];
+}
+
+function renderIcon(network: string) {
+  switch (network.toLowerCase()) {
+    case "linkedin":
+      return "logos:linkedin-icon";
+    case "twitter":
+    case "x":
+      return "logos:twitter";
+    case "github":
+      return "logos:github-icon";
+    case "medium":
+      return "logos:medium-icon";
+    case "codepen":
+      return "logos:codepen-icon";
+    case "bitbucket":
+      return "logos:bitbucket";
+    case "npm":
+      return "logos:npm-icon";
+    case "youtube":
+      return "logos:youtube-icon";
+    case "stackoverflow":
+      return "logos:stackoverflow-icon";
+    default:
+      return undefined;
+  }
 }
 ---
 
@@ -14,9 +41,11 @@ interface Props {
   <SectionTitle>{t("section.socialMedia")}</SectionTitle>
   {
     profiles?.map((profile) => {
+      profile.icon = renderIcon(profile.network || "");
       return (
-        <p>
-          {profile.network}/{profile.username}
+        <p class="inline-flex items-center">
+          {profile.icon && <Icon name={profile.icon} />}
+          {profile.username}
         </p>
       );
     })
