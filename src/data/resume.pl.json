@@ -1,0 +1,119 @@
+{
+  "basics": {
+    "name": "John Doe",
+    "label": "Programista",
+    "image": "",
+    "email": "john@gmail.com",
+    "phone": "(912) 555-4321",
+    "url": "https://johndoe.com",
+    "summary": "Podsumowanie Johna Doe…",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "Kalifornia"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "john",
+        "url": "https://twitter.com/john"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Firma",
+      "position": "Prezes",
+      "url": "https://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Opis…",
+      "highlights": ["Założył firmę"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organizacja",
+      "position": "Wolontariusz",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Opis…",
+      "highlights": ["Nagrodzony tytułem ‘Wolontariusz Miesiąca’"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Uniwersytet",
+      "url": "https://institution.com/",
+      "area": "Rozwój oprogramowania",
+      "studyType": "Licencjat",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": ["DB1101 - Podstawy SQL"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Nagroda",
+      "date": "2014-11-01",
+      "awarder": "Firma",
+      "summary": "Nie ma łyżki."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certyfikat",
+      "date": "2021-11-07",
+      "issuer": "Firma",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publikacja",
+      "publisher": "Firma",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Opis…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Tworzenie stron internetowych",
+      "level": "Mistrz",
+      "keywords": ["HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Angielski",
+      "fluency": "Rodzimy użytkownik"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Dzika przyroda",
+      "keywords": ["Tchórze", "Jednorożce"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Referencja…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Projekt",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Opis…",
+      "highlights": ["Zdobył nagrodę na AIHacks 2016"],
+      "url": "https://project.com/"
+    }
+  ]
+}

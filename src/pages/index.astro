@@ -1,6 +1,10 @@
 ---
 import type { ResumeSchema } from "@kurone-kito/jsonresume-types";
-import resumeData from "../data/resume.json";
+import { astroI18n } from "astro-i18n";
+
+const locale = astroI18n.locale;
+const defaultLocale = locale === astroI18n.primaryLocale;
+
 import Grid from "../components/Grid.astro";
 import Volunteer from "../components/sections/Volunteer.astro";
 import Education from "../components/sections/Education.astro";
@@ -13,7 +17,10 @@ import Certificates from "../components/sections/Certificates.astro";
 import Interests from "../components/sections/Interests.astro";
 import Profiles from "../components/sections/Profiles.astro";
 
-const resume: ResumeSchema = resumeData as ResumeSchema;
+// Import all resyme data files
+const resumes = import.meta.glob("../data/resume*.json", { eager: true });
+// Import resume data file in selected language
+const resume = resumes[`../data/resume${defaultLocale ? "" : "." + locale}.json`] as ResumeSchema;
 ---
 
 <html lang="en">

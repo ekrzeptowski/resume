@@ -1,8 +1,9 @@
+/// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
 
 // ###> astro-i18n/type-generation ###
 type PrimaryLocale = "en";
-type SecondaryLocale = "";
+type SecondaryLocale = "pl";
 type Locale = PrimaryLocale | SecondaryLocale;
 type RouteParameters = { "/": undefined };
 type Route = keyof RouteParameters;

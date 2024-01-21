@@ -1,0 +1,14 @@
+{
+  "section": {
+    "socialMedia": "Profile",
+    "interests": "Zainteresowania",
+    "certificates": "Certyfikaty",
+    "languages": "Języki",
+    "skills": "Umiejętności",
+    "work": "Praca",
+    "education": "Edukacja",
+    "projects": "Projekty",
+    "volunteer": "Wolontariat",
+    "references": "Referencje"
+  }
+}
