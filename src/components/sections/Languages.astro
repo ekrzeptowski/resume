@@ -15,10 +15,10 @@ interface Props {
   {
     languages?.map((language) => {
       return (
-        <>
-          <h4>{language.language}</h4>
-          <p>{language.fluency}</p>
-        </>
+        <div class="flex">
+          <h4 class="font-semibold">{language.language}</h4>
+          <p>&nbsp;- {language.fluency}</p>
+        </div>
       );
     })
   }
