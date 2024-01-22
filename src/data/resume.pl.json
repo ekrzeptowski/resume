@@ -1,119 +1,153 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Programista",
+    "name": "Ewelina Krzeptowska",
+    "label": "Full Stack Web Developer",
     "image": "",
-    "email": "john@gmail.com",
-    "phone": "(912) 555-4321",
-    "url": "https://johndoe.com",
-    "summary": "Podsumowanie Johna Doe…",
+    "email": "contact@ekrzeptowski.pl",
+    "phone": "",
+    "url": "https://ekrzeptowski.pl",
+    "summary": "Full Stack Web Developer",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "Kalifornia"
+      "address": "",
+      "postalCode": "",
+      "city": "Kraków / Remote",
+      "countryCode": "PL",
+      "region": ""
     },
     "profiles": [
       {
+        "network": "LinkedIn",
+        "username": "ewelina-krzeptowska",
+        "url": "https://www.linkedin.com/in/ewelina-krzeptowska/"
+      },
+      {
         "network": "Twitter",
-        "username": "john",
-        "url": "https://twitter.com/john"
+        "username": "ekrzeptowski",
+        "url": "https://twitter.com/ekrzeptowski"
       }
     ]
   },
-  "work": [
-    {
-      "name": "Firma",
-      "position": "Prezes",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Opis…",
-      "highlights": ["Założył firmę"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "Organizacja",
-      "position": "Wolontariusz",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Opis…",
-      "highlights": ["Nagrodzony tytułem ‘Wolontariusz Miesiąca’"]
-    }
-  ],
+  "work": [],
+  "volunteer": [],
   "education": [
     {
-      "institution": "Uniwersytet",
-      "url": "https://institution.com/",
-      "area": "Rozwój oprogramowania",
-      "studyType": "Licencjat",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "score": "4.0",
-      "courses": ["DB1101 - Podstawy SQL"]
-    }
-  ],
-  "awards": [
+      "institution": "Wyższa Szkoła Ekonomii i Informatyki w Krakowie",
+      "url": "https://wsei.edu.pl/",
+      "area": "Informatyka stosowana",
+      "studyType": "Inżynier",
+      "startDate": "2022-09-30",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    },
     {
-      "title": "Nagroda",
-      "date": "2014-11-01",
-      "awarder": "Firma",
-      "summary": "Nie ma łyżki."
+      "institution": "Technikum Nr 2 w Zespole Szkół Hotelarsko Turystycznych w Zakopanem",
+      "url": "",
+      "area": "",
+      "studyType": "Technik informatyk",
+      "startDate": "2012-09-01",
+      "endDate": "2016-04-30",
+      "score": "",
+      "courses": []
     }
   ],
+  "awards": [],
   "certificates": [
     {
-      "name": "Certyfikat",
-      "date": "2021-11-07",
-      "issuer": "Firma",
-      "url": "https://certificate.com"
-    }
-  ],
-  "publications": [
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "date": "2023-03-24",
+      "issuer": "Microsoft",
+      "url": ""
+    },
     {
-      "name": "Publikacja",
-      "publisher": "Firma",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Opis…"
+      "name": "IT Specialist - Software Development",
+      "date": "2023-02-24",
+      "issuer": "Certiport",
+      "url": ""
+    },
+    {
+      "name": "IT Specialist - Databases",
+      "date": "2023-02-10",
+      "issuer": "Certiport",
+      "url": ""
     }
   ],
+  "publications": [],
   "skills": [
     {
-      "name": "Tworzenie stron internetowych",
-      "level": "Mistrz",
-      "keywords": ["HTML", "CSS", "JavaScript"]
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": ["HTML", "CSS", "React", "Redux"]
+    },
+    {
+      "name": "Języki programowania",
+      "level": "",
+      "keywords": ["JavaScript", "TypeScript", "Node.js", "C#"]
+    },
+    {
+      "name": "Bazy danych",
+      "level": "",
+      "keywords": ["Prisma", "PostgreSQL", "MS SQL", "MariaDB", "MongoDB"]
+    },
+    {
+      "name": "Inne",
+      "level": "",
+      "keywords": ["GraphQL", "Git", "Linux", "Docker", "Kubernetes", "GCP"]
     }
   ],
   "languages": [
     {
+      "language": "Polski",
+      "fluency": "Ojczysty"
+    },
+    {
       "language": "Angielski",
-      "fluency": "Rodzimy użytkownik"
+      "fluency": "Profesjonalny"
     }
   ],
   "interests": [
     {
-      "name": "Dzika przyroda",
-      "keywords": ["Tchórze", "Jednorożce"]
-    }
-  ],
-  "references": [
+      "name": "Gry komputerowe",
+      "keywords": []
+    },
     {
-      "name": "Jane Doe",
-      "reference": "Referencja…"
+      "name": "Fotografia",
+      "keywords": []
+    },
+    {
+      "name": "Edycja wideo",
+      "keywords": []
+    },
+    {
+      "name": "Podróże",
+      "keywords": []
     }
   ],
+  "references": [],
   "projects": [
     {
-      "name": "Projekt",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Opis…",
-      "highlights": ["Zdobył nagrodę na AIHacks 2016"],
-      "url": "https://project.com/"
+      "name": "Fedipost",
+      "startDate": "2024-01-05",
+      "endDate": "",
+      "description": "Fedipost to aplikacja do planowania postów w sieciach społecznościowych fediverse, przy użyciu wbudowanych interfejsów API",
+      "highlights": [],
+      "url": "https://github.com/ekrzeptowski/fedipost"
+    },
+    {
+      "name": "Teeny.ovh",
+      "startDate": "2021-04-11",
+      "endDate": "",
+      "description": "Teeny.ovh to nowoczesna aplikacja służącą do skracania długich linków",
+      "highlights": [],
+      "url": "https://teeny.ovh"
+    },
+    {
+      "name": "Social Assistant",
+      "startDate": "",
+      "endDate": "",
+      "description": "Aplikacja ułatwiająca analizę osób obserwujących na Twitterze. Większość\naplikacji, stworzona do analizy liczby osób obserwujących profil na\nTwitterze, które przetestowałam działała zbyt wolno poprzez renderowanie\npo stronie serwera, albo interfejs aplikacji nie był zoptymalizowany na\nurządzenia mobilne. Dlatego postanowiłam stworzyć nową aplikację\nprzeznaczoną do tego celu.",
+      "highlights": [],
+      "url": "https://github.com/ekrzeptowski/social-assist-ui"
     }
   ],
   "meta": {
