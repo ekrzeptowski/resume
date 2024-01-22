@@ -1,7 +1,8 @@
 ---
 import type { ResumeSchema } from "@kurone-kito/jsonresume-types";
-import { t } from "astro-i18n";
+import { astroI18n, t } from "astro-i18n";
 import SectionTitle from "../SectionTitle.astro";
+import { formatDate } from "../../utils/formatDate";
 
 const { certificates } = Astro.props;
 
@@ -14,11 +15,14 @@ interface Props {
   <SectionTitle>{t("section.certificates")}</SectionTitle>
   {
     certificates?.map((certificate) => {
+      certificate.dateParsed = certificate.date ? formatDate(certificate.date, astroI18n.locale) : undefined;
       return (
         <>
-          <h4>{certificate.name}</h4>
-          <p>{certificate.issuer}</p>
-          <p>{certificate.date}</p>
+          <h4 class="font-semibold">{certificate.name}</h4>
+          <div class="flex">
+            <p class="flex-1">{certificate.issuer}</p>
+            <p class="font-semibold">{certificate.dateParsed}</p>
+          </div>
         </>
       );
     })
