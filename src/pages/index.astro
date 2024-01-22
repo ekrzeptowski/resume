@@ -17,6 +17,8 @@ import Certificates from "../components/sections/Certificates.astro";
 import Interests from "../components/sections/Interests.astro";
 import Profiles from "../components/sections/Profiles.astro";
 
+import { Icon } from "astro-icon/components";
+
 // Import all resyme data files
 const resumes = import.meta.glob("../data/resume*.json", { eager: true });
 // Import resume data file in selected language
@@ -40,11 +42,11 @@ const resume = resumes[`../data/resume${defaultLocale ? "" : "." + locale}.json`
     <Grid>
       <div class="h-full min-h-screen bg-primary-100">
         <!--Contact info-->
-        <div class="bg-blue-300">
-          <h1>{resume.basics?.name}</h1>
-          <h2>{resume.basics?.summary}</h2>
-          <p>{resume.basics?.location?.city}</p>
-          <p>{resume.basics?.email}</p>
+        <div class="bg-primary-500 p-2 text-white">
+          <h1 class="text-2xl font-semibold">{resume.basics?.name}</h1>
+          <h2 class="text-lg">{resume.basics?.summary}</h2>
+          <p class="flex items-center"><Icon name="lucide:map-pin" class="mr-1" />{resume.basics?.location?.city}</p>
+          <p class="flex items-center"><Icon name="lucide:mail" class="mr-1" />{resume.basics?.email}</p>
         </div>
         <div class="p-2">
           <!--Social media-->
