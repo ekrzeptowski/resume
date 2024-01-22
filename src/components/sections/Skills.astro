@@ -12,15 +12,17 @@ interface Props {
 
 <section>
   <SectionTitle>{t("section.skills")}</SectionTitle>
-  {
-    skills?.map((skill) => {
-      return (
-        <>
-          <h4>{skill.name}</h4>
-          <p>{skill.level}</p>
-          <p>{skill.keywords?.join(", ")}</p>
-        </>
-      );
-    })
-  }
+  <div class="grid grid-cols-2 gap-2">
+    {
+      skills?.map((skill) => {
+        return (
+          <div>
+            <h4 class="font-semibold">{skill.name}</h4>
+            <p>{skill.level}</p>
+            <p>{skill.keywords?.join(", ")}</p>
+          </div>
+        );
+      })
+    }
+  </div>
 </section>
