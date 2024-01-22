@@ -2,6 +2,8 @@
 import { astroI18n, t } from "astro-i18n";
 import SectionTitle from "../SectionTitle.astro";
 import type { ResumeSchema } from "@kurone-kito/jsonresume-types";
+import { Icon } from "astro-icon/components";
+
 import { formatDate } from "../../utils/formatDate";
 
 const { projects } = Astro.props;
@@ -20,11 +22,19 @@ interface Props {
 
       return (
         <div>
-          <h4>{project.name}</h4>
-          <p>{project.description}</p>
-          <p>{project.startDateParsed}</p>
-          <p>{project.endDateParsed}</p>
-          <p>{project.url}</p>
+          <div class="flex font-semibold">
+            <h4 class="flex-1">{project.name}</h4>
+            <p>
+              {project.startDateParsed} {project.endDateParsed ? ` - ${project.endDateParsed}` : ""}
+            </p>
+          </div>
+          <a href={project.url} class="flex items-center">
+            <Icon name="lucide:external-link" class="mr-1" />
+            {project.url}
+          </a>
+
+          <p class="my-2">{project.description}</p>
+
           {project.highlights?.map((highlight) => (
             <p>{highlight}</p>
           ))}
