@@ -30,6 +30,11 @@ const resume = resumes[`../data/resume${defaultLocale ? "" : "." + locale}.json`
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{resume.basics?.name}</title>
+    <style>
+      @page {
+        margin:0;
+      }
+    </style>
   </head>
   <body>
     <Grid>
