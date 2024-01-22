@@ -39,15 +39,17 @@ function renderIcon(network: string) {
 
 <section>
   <SectionTitle>{t("section.socialMedia")}</SectionTitle>
-  {
-    profiles?.map((profile) => {
-      profile.icon = renderIcon(profile.network || "");
-      return (
-        <p class="inline-flex items-center">
-          {profile.icon && <Icon name={profile.icon} />}
-          {profile.username}
-        </p>
-      );
-    })
-  }
+  <div class="flex flex-wrap gap-2">
+    {
+      profiles?.map((profile) => {
+        profile.icon = renderIcon(profile.network || "");
+        return (
+          <p class="inline-flex items-center">
+            {profile.icon && <Icon name={profile.icon} class="mr-1" />}
+            {profile.username}
+          </p>
+        );
+      })
+    }
+  </div>
 </section>
