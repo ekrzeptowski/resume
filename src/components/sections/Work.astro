@@ -22,7 +22,7 @@ interface Props {
           <div class="flex font-semibold">
             <h4 class="flex-1 ">{work.name}</h4>
             <p>
-              {work.startDateParsed} - {work.endDateParsed ? `${work.endDateParsed}` : t("present")}
+              {work.startDateParsed} - {work.endDateParsed || t("present")}
             </p>
           </div>
           <div class="flex">
