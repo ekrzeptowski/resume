@@ -15,10 +15,10 @@ interface Props {
   {
     references?.map((reference) => {
       return (
-        <>
-          <h4>{reference.name}</h4>
+        <div>
+          <h4 class="font-semibold">{reference.name}</h4>
           <p>{reference.reference}</p>
-        </>
+        </div>
       );
     })
   }
