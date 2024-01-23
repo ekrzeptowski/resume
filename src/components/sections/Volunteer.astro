@@ -19,15 +19,21 @@ interface Props {
       volunteer.endDateParsed = volunteer.endDate ? formatDate(volunteer.endDate, astroI18n.locale) : undefined;
       return (
         <>
-          <h4>{volunteer.organization}</h4>
-          <p>{volunteer.position}</p>
-          <p>
-            {volunteer.startDateParsed} - {volunteer.endDateParsed}
-          </p>
-          <p>{volunteer.summary}</p>
-          {volunteer.highlights?.map((highlight) => {
-            return <p>{highlight}</p>;
-          })}
+          <div class="flex font-semibold">
+            <h4 class="flex-1">{volunteer.organization}</h4>
+            <p>
+              {volunteer.startDateParsed} - {volunteer.endDateParsed || t("present")}
+            </p>
+          </div>
+          <div class="flex">
+            <p class="flex-1">{volunteer.summary}</p>
+            <p>{volunteer.position}</p>
+          </div>
+          <ul class="list-disc text-sm text-gray-900">
+            {volunteer.highlights?.map((highlight) => {
+              return <li class="ml-4">{highlight}</li>;
+            })}
+          </ul>
         </>
       );
     })
