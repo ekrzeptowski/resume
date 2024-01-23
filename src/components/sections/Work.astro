@@ -19,14 +19,21 @@ interface Props {
       work.endDateParsed = work.endDate ? formatDate(work.endDate, astroI18n.locale) : undefined;
       return (
         <>
-          <h4>{work.name}</h4>
-          <p>{work.position}</p>
-          <p>{work.startDateParsed}</p>
-          <p>{work.endDateParsed}</p>
-          <p>{work.summary}</p>
-          {work.highlights?.map((highlight) => {
-            return <p>{highlight}</p>;
-          })}
+          <div class="flex font-semibold">
+            <h4 class="flex-1 ">{work.name}</h4>
+            <p>
+              {work.startDateParsed} - {work.endDateParsed ? `${work.endDateParsed}` : t("present")}
+            </p>
+          </div>
+          <div class="flex">
+            <p class="flex-1">{work.summary}</p>
+            <p>{work.position}</p>
+          </div>
+          <ul class="list-disc text-sm text-gray-900">
+            {work.highlights?.map((highlight) => {
+              return <li class="ml-4">{highlight}</li>;
+            })}
+          </ul>
         </>
       );
     })
