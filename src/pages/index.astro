@@ -77,7 +77,7 @@ const resume = resumes[`../data/resume${defaultLocale ? "" : "." + locale}.json`
         {resume.projects && resume.projects.length > 0 && <Projects projects={resume.projects} />}
       </div>
     </Grid>
-    {resume.meta.footer && <footer class="bg-primary-500 p-4 text-xs text-white">{resume.meta.footer}</footer>}
+    {resume.meta?.footer && <footer class="bg-primary-500 p-4 text-xs text-white">{resume.meta.footer}</footer>}
     <script is:inline>
       // Get the height of the content
       let contentHeight = document.body.scrollHeight;
