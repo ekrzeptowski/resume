@@ -115,5 +115,8 @@
       "highlights": ["Won award at AIHacks 2016"],
       "url": "https://project.com/"
     }
-  ]
+  ],
+  "meta": {
+    "footer": "Footer text"
+  }
 }

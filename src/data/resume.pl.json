@@ -115,5 +115,8 @@
       "highlights": ["Zdobył nagrodę na AIHacks 2016"],
       "url": "https://project.com/"
     }
-  ]
+  ],
+  "meta": {
+    "footer": "Tekst stopki…"
+  }
 }

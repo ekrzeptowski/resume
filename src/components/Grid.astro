@@ -2,6 +2,6 @@
 const { classList } = Astro.props;
 ---
 
-<div class:list={["grid grid-cols-3", classList]}>
+<div class:list={["grid h-full flex-1 grid-cols-3", classList]}>
   <slot />
 </div>
