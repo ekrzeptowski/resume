@@ -21,7 +21,7 @@ interface Props {
         <>
           <div class="flex font-semibold">
             <h4 class="flex-1">
-              <a href={volunteer.url}>{volunteer.organization}</a>
+              <a href={volunteer.url || undefined}>{volunteer.organization}</a>
             </h4>
             <p>
               {volunteer.startDateParsed} - {volunteer.endDateParsed || t("present")}

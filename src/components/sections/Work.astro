@@ -21,7 +21,7 @@ interface Props {
         <>
           <div class="flex font-semibold">
             <h4 class="flex-1">
-              <a href={work.url}>{work.name}</a>
+              <a href={work.url || undefined}>{work.name}</a>
             </h4>
             <p>
               {work.startDateParsed} - {work.endDateParsed || t("present")}

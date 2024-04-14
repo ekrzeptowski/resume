@@ -28,10 +28,12 @@ interface Props {
               {project.startDateParsed} {project.endDateParsed ? ` - ${project.endDateParsed}` : ""}
             </p>
           </div>
-          <a href={project.url} class="flex items-center">
-            <Icon name="lucide:external-link" class="mr-1" />
-            {project.url}
-          </a>
+          {project.url && (
+            <a href={project.url} class="flex items-center">
+              <Icon name="lucide:external-link" class="mr-1" />
+              {project.url}
+            </a>
+          )}
 
           <p class="my-2">{project.description}</p>
 

@@ -19,7 +19,7 @@ interface Props {
       return (
         <>
           <h4 class="font-semibold">
-            <a href={certificate.url}>{certificate.name}</a>
+            <a href={certificate.url || undefined}>{certificate.name}</a>
           </h4>
           <div class="flex">
             <p class="flex-1">{certificate.issuer}</p>

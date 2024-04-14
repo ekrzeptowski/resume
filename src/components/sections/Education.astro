@@ -22,7 +22,7 @@ interface Props {
         <div class="flex">
           <div class="flex-1">
             <h4 class="font-semibold">
-              <a href={education.url}>{education.institution}</a>
+              <a href={education.url || undefined}>{education.institution}</a>
             </h4>
             {education.area && <p>{education.area}</p>}
             {education.gpa && <p>{education.gpa}</p>}
