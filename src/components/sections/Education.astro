@@ -21,7 +21,9 @@ interface Props {
       return (
         <div class="flex">
           <div class="flex-1">
-            <h4 class="font-semibold">{education.institution}</h4>
+            <h4 class="font-semibold">
+              <a href={education.url}>{education.institution}</a>
+            </h4>
             {education.area && <p>{education.area}</p>}
             {education.gpa && <p>{education.gpa}</p>}
             {education.courses?.map((course) => {

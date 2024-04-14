@@ -20,7 +20,9 @@ interface Props {
       return (
         <>
           <div class="flex font-semibold">
-            <h4 class="flex-1 ">{work.name}</h4>
+            <h4 class="flex-1">
+              <a href={work.url}>{work.name}</a>
+            </h4>
             <p>
               {work.startDateParsed} - {work.endDateParsed || t("present")}
             </p>

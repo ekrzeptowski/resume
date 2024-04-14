@@ -18,7 +18,9 @@ interface Props {
       certificate.dateParsed = certificate.date ? formatDate(certificate.date, astroI18n.locale) : undefined;
       return (
         <>
-          <h4 class="font-semibold">{certificate.name}</h4>
+          <h4 class="font-semibold">
+            <a href={certificate.url}>{certificate.name}</a>
+          </h4>
           <div class="flex">
             <p class="flex-1">{certificate.issuer}</p>
             <p class="font-semibold">{certificate.dateParsed}</p>

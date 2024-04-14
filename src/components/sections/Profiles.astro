@@ -44,10 +44,10 @@ function renderIcon(network: string) {
       profiles?.map((profile) => {
         profile.icon = renderIcon(profile.network || "");
         return (
-          <p class="inline-flex items-center">
+          <a href={profile.url} class="inline-flex items-center">
             {profile.icon && <Icon name={profile.icon} class="mr-1" />}
             {profile.username}
-          </p>
+          </a>
         );
       })
     }
