@@ -135,18 +135,18 @@
       "name": "Schedy",
       "startDate": "2024-02-11",
       "endDate": "",
-      "description": "An application designed for managing and tracking social media content and engagement. It allows you to schedule posts, track your social media performance. The app is designed for Reddit, but I plan to add more social media platforms in the future",
+      "description": "An application designed for managing and tracking social media content and engagement. It allows you to schedule posts, track your social media performance. The app is designed for Reddit, but I plan to add more social media platforms in the future.",
       "highlights": [
         "Built with Next.js, React Query, Prisma, PostgreSQL and AWS S3",
         "Integrated with the Reddit API via snoots-revived library"
       ],
-      "url": "https://ekrzeptowski.pl/project/schedy"
+      "url": "https://ekrzeptowski.pl/en/project/schedy"
     },
     {
       "name": "Fedipost",
       "startDate": "2024-01-05",
       "endDate": "",
-      "description": "Fedipost is a fediverse post scheduler using builtin scheduling functionality",
+      "description": "Fedipost is a fediverse post scheduler using builtin scheduling functionality. It allows you to schedule posts on Mastodon, Pleroma, and other fediverse platforms.",
       "highlights": [],
       "url": "https://github.com/ekrzeptowski/fedipost"
     },
@@ -154,7 +154,7 @@
       "name": "Teeny.ovh",
       "startDate": "2021-04-11",
       "endDate": "",
-      "description": "Teeny.ovh is a modern application used to shorten long links",
+      "description": "Teeny.ovh is a modern application used to shorten long links. It allows you to shorten links and track the number of clicks. The application offers essential functionality even without JavaScript.",
       "highlights": [],
       "url": "https://teeny.ovh"
     },

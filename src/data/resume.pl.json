@@ -135,7 +135,7 @@
       "name": "Schedy",
       "startDate": "2024-02-11",
       "endDate": "",
-      "description": "Aplikacja zaprojektowana do zarządzania treściami i śledzenia zaangażowania w mediach społecznościowych. Pozwala na planowanie postów i śledzenie wyników w mediach społecznościowych. Aplikacja jest zaprojektowana dla Reddita, ale planuję dodać więcej platform mediów społecznościowych w przyszłości",
+      "description": "Aplikacja zaprojektowana do zarządzania treściami i śledzenia zaangażowania w mediach społecznościowych. Aplikacja jest zaprojektowana dla Reddita, ale planuję dodać więcej platform mediów społecznościowych w przyszłości.",
       "highlights": [
         "Zbudowana przy użyciu Next.js, React Query, Prisma, PostgreSQL i AWS S3",
         "Zintegrowana z API Reddita za pomocą biblioteki snoots-revived"
@@ -146,7 +146,7 @@
       "name": "Fedipost",
       "startDate": "2024-01-05",
       "endDate": "",
-      "description": "Fedipost to aplikacja do planowania postów w sieciach społecznościowych fediverse, przy użyciu wbudowanych interfejsów API",
+      "description": "Fedipost to aplikacja do planowania postów w sieciach społecznościowych fediverse, przy użyciu wbudowanych interfejsów API.",
       "highlights": [],
       "url": "https://github.com/ekrzeptowski/fedipost"
     },
@@ -154,7 +154,7 @@
       "name": "Teeny.ovh",
       "startDate": "2021-04-11",
       "endDate": "",
-      "description": "Teeny.ovh to nowoczesna aplikacja służącą do skracania długich linków",
+      "description": "Teeny.ovh to nowoczesna aplikacja służącą do skracania długich linków. Umożliwia skracanie linków i śledzenie liczby kliknięć. Aplikacja oferuje podstawową funkcjonalność nawet bez JavaScript.",
       "highlights": [],
       "url": "https://teeny.ovh"
     },
