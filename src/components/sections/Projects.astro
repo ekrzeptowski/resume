@@ -37,9 +37,13 @@ interface Props {
 
           <p class="my-2">{project.description}</p>
 
-          {project.highlights?.map((highlight) => (
-            <p>{highlight}</p>
-          ))}
+          {project.highlights && (
+            <ul class="list-inside list-disc space-y-1 text-sm text-gray-800">
+              {project.highlights?.map((highlight) => (
+                <li>{highlight}</li>
+              ))}
+            </ul>
+          )}
         </div>
       );
     })
