@@ -54,6 +54,14 @@ const resume = resumes[`../data/resume${defaultLocale ? "" : "." + locale}.json`
           <h2 class="text-lg">{resume.basics?.summary}</h2>
           <p class="flex items-center"><Icon name="lucide:map-pin" class="mr-1" />{resume.basics?.location?.city}</p>
           {
+            resume.basics?.url && (
+              <a href={resume.basics.url} class="flex items-center">
+                <Icon name="lucide:external-link" class="mr-1" />
+                {resume.basics.url}
+              </a>
+            )
+          }
+          {
             resume.basics?.email && (
               <a href={"mailto:" + resume.basics?.email} class="flex items-center">
                 <Icon name="lucide:mail" class="mr-1" />
