@@ -76,8 +76,8 @@
   "skills": [
     {
       "name": "Web Development",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "React", "Redux"]
+      "level": "",
+      "keywords": ["HTML", "CSS", "Astro", "React", "Redux"]
     },
     {
       "name": "Programming",
@@ -126,6 +126,17 @@
   "references": [],
   "projects": [
     {
+      "name": "Schedy",
+      "startDate": "2024-02-11",
+      "endDate": "",
+      "description": "An application designed for managing and tracking social media content and engagement. It allows you to schedule posts, track your social media performance. The app is designed for Reddit, but I plan to add more social media platforms in the future",
+      "highlights": [
+        "Built with Next.js, React Query, Prisma, PostgreSQL and AWS S3",
+        "Integrated with the Reddit API via snoots-revived library"
+      ],
+      "url": "https://ekrzeptowski.pl/project/schedy"
+    },
+    {
       "name": "Fedipost",
       "startDate": "2024-01-05",
       "endDate": "",
@@ -151,6 +162,6 @@
     }
   ],
   "meta": {
-    "footer": "Footer text"
+    "footer": ""
   }
 }

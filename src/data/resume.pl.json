@@ -76,8 +76,8 @@
   "skills": [
     {
       "name": "Web Development",
-      "level": "Master",
-      "keywords": ["HTML", "CSS", "React", "Redux"]
+      "level": "",
+      "keywords": ["HTML", "CSS", "Astro", "React", "Redux"]
     },
     {
       "name": "Języki programowania",
@@ -126,6 +126,17 @@
   "references": [],
   "projects": [
     {
+      "name": "Schedy",
+      "startDate": "2024-02-11",
+      "endDate": "",
+      "description": "Aplikacja zaprojektowana do zarządzania treściami i śledzenia zaangażowania w mediach społecznościowych. Pozwala na planowanie postów i śledzenie wyników w mediach społecznościowych. Aplikacja jest zaprojektowana dla Reddita, ale planuję dodać więcej platform mediów społecznościowych w przyszłości",
+      "highlights": [
+        "Zbudowana przy użyciu Next.js, React Query, Prisma, PostgreSQL i AWS S3",
+        "Zintegrowana z API Reddita za pomocą biblioteki snoots-revived"
+      ],
+      "url": "https://ekrzeptowski.pl/project/schedy"
+    },
+    {
       "name": "Fedipost",
       "startDate": "2024-01-05",
       "endDate": "",
@@ -151,6 +162,6 @@
     }
   ],
   "meta": {
-    "footer": "Tekst stopki…"
+    "footer": ""
   }
 }
